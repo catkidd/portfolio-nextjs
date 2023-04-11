@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Main from "@/components/Main";
+import Skills from "@/components/Skills";
 import Navbar from "@/components/navbar";
 import Head from "next/head";
 
@@ -14,6 +15,7 @@ export default function Home() {
             <Navbar />
             <Main />
             <About />
+            <Skills />
         </>
     );
 }
