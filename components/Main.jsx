@@ -21,17 +21,17 @@ const Main = () => {
                             exercitationem alias?
                         </p>
                         <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-                            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500">
-                                <FaFacebookF />
+                            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-400">
+                                <FaFacebookF size={25} />
                             </div>
-                            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500">
-                                <FaInstagram />
+                            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-400">
+                                <FaInstagram size={25} />
                             </div>
-                            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500">
-                                <FaLinkedinIn />
+                            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-400">
+                                <FaLinkedinIn size={25} />
                             </div>
-                            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500">
-                                <FaGithub />
+                            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-400">
+                                <FaGithub size={25} />
                             </div>
                         </div>
                     </div>
