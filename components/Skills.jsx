@@ -3,7 +3,7 @@ import React from "react";
 
 const Skills = () => {
     return (
-        <div className="w-full lg:h-screen py-16 p-2">
+        <div className="w-full lg:h-screen py-16 px-2">
             <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-ful">
                 <p className="text-xl tracking-widest uppercase text-[#5651e5]">Skills</p>
                 <h2 className="py-4">What can I do</h2>
