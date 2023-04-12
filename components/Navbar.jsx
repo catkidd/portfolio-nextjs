@@ -31,12 +31,14 @@ const Navbar = () => {
                     shadow ? "fixed h-20 w-full shadow-xl z-[999]" : "fixed h-20 w-full z-[999]"
                 }>
                 <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-                    <Image
-                        src="/../public/assets/black-logo-no-bg.png"
-                        alt="/"
-                        width="125"
-                        height="50"
-                    />
+                    <Link href="/">
+                        <Image
+                            src="/../public/assets/black-logo-no-bg.png"
+                            alt="/"
+                            width="125"
+                            height="50"
+                        />
+                    </Link>
                     <div>
                         <ul className="hidden md:flex">
                             <Link href="/">
@@ -83,12 +85,14 @@ const Navbar = () => {
                         }>
                         <div>
                             <div className="flex justify-between items-center w-full">
-                                <Image
-                                    src="/../public/assets/black-logo-no-bg.png"
-                                    alt="/"
-                                    width="85"
-                                    height="35"
-                                />
+                                <Link href="/">
+                                    <Image
+                                        src="/../public/assets/black-logo-no-bg.png"
+                                        alt="/"
+                                        width="85"
+                                        height="35"
+                                    />
+                                </Link>
                                 <div
                                     onClick={handleNav}
                                     className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer">
@@ -104,19 +108,49 @@ const Navbar = () => {
                         <div className="py-4 flex flex-col">
                             <ul className="uppercase">
                                 <Link href="/">
-                                    <li className="py-4 text-sm">Home</li>
+                                    <li
+                                        onClick={() => {
+                                            setNav(fals);
+                                        }}
+                                        className="py-4 text-sm">
+                                        Home
+                                    </li>
                                 </Link>
                                 <Link href="/">
-                                    <li className="py-4 text-sm">About</li>
+                                    <li
+                                        onClick={() => {
+                                            setNav(fals);
+                                        }}
+                                        className="py-4 text-sm">
+                                        About
+                                    </li>
                                 </Link>
                                 <Link href="/">
-                                    <li className="py-4 text-sm">Skills</li>
+                                    <li
+                                        onClick={() => {
+                                            setNav(fals);
+                                        }}
+                                        className="py-4 text-sm">
+                                        Skills
+                                    </li>
                                 </Link>
                                 <Link href="/">
-                                    <li className="py-4 text-sm">Projects</li>
+                                    <li
+                                        onClick={() => {
+                                            setNav(fals);
+                                        }}
+                                        className="py-4 text-sm">
+                                        Projects
+                                    </li>
                                 </Link>
                                 <Link href="/">
-                                    <li className="py-4 text-sm">Contact</li>
+                                    <li
+                                        onClick={() => {
+                                            setNav(fals);
+                                        }}
+                                        className="py-4 text-sm">
+                                        Contact
+                                    </li>
                                 </Link>
                             </ul>
                             <div className="pt-40">
