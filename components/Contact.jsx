@@ -24,34 +24,34 @@ const Contact = () => {
                                 />
                             </div>
                             <div>
-                                <h2 className="py-2">Dipesh Parajuli</h2>
+                                <h2 className="py-4">Dipesh Parajuli</h2>
                                 <p className="py-4">
                                     I am available for freelance or full-time positions. Contact me
                                     and let&apos;s talk.
                                 </p>
                             </div>
-                        </div>
-                        <div>
-                            <p className="uppercase pt-8">Connect with me</p>
-                            <div className="flex justify-between items-center py-4">
-                                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                                    <FaFacebookF size={25} />
-                                </div>
-                                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                                    <FaInstagram size={25} />
-                                </div>
-                                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                                    <FaLinkedinIn size={25} />
-                                </div>
-                                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                                    <FaGithub size={25} />
+                            <div className=" pt-36">
+                                <p className="uppercase py-4 text-[#5651e5]">Connect with me</p>
+                                <div className="flex justify-between items-center py-4">
+                                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                                        <FaFacebookF size={20} />
+                                    </div>
+                                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                                        <FaInstagram size={20} />
+                                    </div>
+                                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                                        <FaLinkedinIn size={20} />
+                                    </div>
+                                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                                        <FaGithub size={20} />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     {/* right */}
-                    <div className="col-spav-3 w-full h-auto shadow-gray-400 rounded-xl lg:p-4">
+                    <div className="col-span-3 w-full h-auto shadow-gray-400 rounded-xl lg:p-4">
                         <div className="p-4">
                             <form action="/">
                                 <div className="grid grid-cols-2 gap-4 w-full py-2">
@@ -62,6 +62,7 @@ const Contact = () => {
                                             type="text"
                                             name=""
                                             id=""
+                                            placeholder="Your name"
                                         />
                                     </div>
                                     <div className="flex flex-col">
@@ -73,6 +74,7 @@ const Contact = () => {
                                             type="text"
                                             name=""
                                             id=""
+                                            placeholder="Your phone number"
                                         />
                                     </div>
                                 </div>
@@ -83,6 +85,7 @@ const Contact = () => {
                                         type="email"
                                         name=""
                                         id=""
+                                        placeholder="Your email address"
                                     />
                                 </div>
 
@@ -93,6 +96,7 @@ const Contact = () => {
                                         type="text"
                                         name=""
                                         id=""
+                                        placeholder="Your subject"
                                     />
                                 </div>
                                 <div className="flex flex-col py-2">
@@ -108,13 +112,13 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-center py-12">
-                    <Link href="/">
-                        <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-                            <HiOutlineChevronDoubleUp className="text-[#5651e5]" size={30} />
-                        </div>
-                    </Link>
-                </div>
+            </div>
+            <div className="flex justify-center py-12">
+                <Link href="/">
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+                        <HiOutlineChevronDoubleUp className="text-[#5651e5]" size={30} />
+                    </div>
+                </Link>
             </div>
         </div>
     );
