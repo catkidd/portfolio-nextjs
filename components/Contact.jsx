@@ -17,9 +17,9 @@ const Contact = () => {
                             <div>
                                 <Image
                                     className="rounded-xl hover:scale-105 ease-in duration-300"
-                                    src="/../public/assets/contact-image.png"
+                                    src="/../public/assets/contact-image-two.jpeg"
                                     alt="image"
-                                    width="300"
+                                    width="500"
                                     height="300"
                                 />
                             </div>
@@ -30,7 +30,7 @@ const Contact = () => {
                                     and let&apos;s talk.
                                 </p>
                             </div>
-                            <div className=" pt-36">
+                            <div className=" pt-32">
                                 <p className="uppercase py-4 text-[#5651e5]">Connect with me</p>
                                 <div className="flex justify-between items-center py-4">
                                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
@@ -51,17 +51,17 @@ const Contact = () => {
                     </div>
 
                     {/* right */}
-                    <div className="col-span-3 w-full h-auto shadow-gray-400 rounded-xl lg:p-4">
+                    <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
                         <div className="p-4">
-                            <form action="/">
-                                <div className="grid grid-cols-2 gap-4 w-full py-2">
+                            <form>
+                                <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                                     <div className="flex flex-col">
                                         <label className="uppercase text-sm py-2">Name</label>
                                         <input
                                             className="border-2 rounded-lg p-3 flex border-gray-300"
                                             type="text"
-                                            name=""
-                                            id=""
+                                            name="username"
+                                            id="username"
                                             placeholder="Your name"
                                         />
                                     </div>
@@ -72,8 +72,8 @@ const Contact = () => {
                                         <input
                                             className="border-2 rounded-lg p-3 flex border-gray-300"
                                             type="text"
-                                            name=""
-                                            id=""
+                                            name="phonenumber"
+                                            id="phonenumber"
                                             placeholder="Your phone number"
                                         />
                                     </div>
@@ -83,19 +83,18 @@ const Contact = () => {
                                     <input
                                         className="border-2 rounded-lg p-3 flex border-gray-300"
                                         type="email"
-                                        name=""
-                                        id=""
+                                        name="email"
+                                        id="email"
                                         placeholder="Your email address"
                                     />
                                 </div>
-
                                 <div className="flex flex-col py-2">
                                     <label className="uppercase text-sm py-2">Subject</label>
                                     <input
                                         className="border-2 rounded-lg p-3 flex border-gray-300"
                                         type="text"
-                                        name=""
-                                        id=""
+                                        name="subject"
+                                        id="subject"
                                         placeholder="Your subject"
                                     />
                                 </div>
@@ -113,7 +112,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center py-12">
+            <div className="flex justify-center py-6">
                 <Link href="/">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
                         <HiOutlineChevronDoubleUp className="text-[#5651e5]" size={30} />
