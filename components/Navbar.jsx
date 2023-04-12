@@ -110,7 +110,7 @@ const Navbar = () => {
                                 <Link href="/">
                                     <li
                                         onClick={() => {
-                                            setNav(fals);
+                                            setNav(false);
                                         }}
                                         className="py-4 text-sm">
                                         Home
@@ -119,7 +119,7 @@ const Navbar = () => {
                                 <Link href="/">
                                     <li
                                         onClick={() => {
-                                            setNav(fals);
+                                            setNav(false);
                                         }}
                                         className="py-4 text-sm">
                                         About
@@ -128,7 +128,7 @@ const Navbar = () => {
                                 <Link href="/">
                                     <li
                                         onClick={() => {
-                                            setNav(fals);
+                                            setNav(false);
                                         }}
                                         className="py-4 text-sm">
                                         Skills
@@ -137,7 +137,7 @@ const Navbar = () => {
                                 <Link href="/">
                                     <li
                                         onClick={() => {
-                                            setNav(fals);
+                                            setNav(false);
                                         }}
                                         className="py-4 text-sm">
                                         Projects
@@ -146,7 +146,7 @@ const Navbar = () => {
                                 <Link href="/">
                                     <li
                                         onClick={() => {
-                                            setNav(fals);
+                                            setNav(false);
                                         }}
                                         className="py-4 text-sm">
                                         Contact
