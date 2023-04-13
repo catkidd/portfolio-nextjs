@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
+import contactImage from "../public/assets/contact-image-two.jpeg";
 
 const Contact = () => {
     return (
@@ -17,7 +18,7 @@ const Contact = () => {
                             <div>
                                 <Image
                                     className="rounded-xl hover:scale-105 ease-in duration-300"
-                                    src="/../public/assets/contact-image-two.jpeg"
+                                    src={contactImage}
                                     alt="image"
                                     width="500"
                                     height="300"
