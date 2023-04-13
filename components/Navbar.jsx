@@ -28,7 +28,9 @@ const Navbar = () => {
             {/* menu bar */}
             <div
                 className={
-                    shadow ? "fixed h-20 w-full shadow-xl z-[999]" : "fixed h-20 w-full z-[999]"
+                    shadow
+                        ? "fixed h-20 w-full shadow-xl z-[999] bg-[#ecf0f3]"
+                        : "fixed h-20 w-full z-[999] bg-[#ecf0f3]"
                 }>
                 <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
                     <Link href="/">
@@ -42,27 +44,27 @@ const Navbar = () => {
                     <div>
                         <ul className="hidden md:flex">
                             <Link href="/">
-                                <li className="ml-10 text-xl uppercase hover:border-b-2 hover:text-[#5651e5]">
+                                <li className="ml-10 text-xl uppercase hover:border-b-2 border-b-gray-300 hover:text-[#5651e5]">
                                     Home
                                 </li>
                             </Link>
                             <Link href="/#about">
-                                <li className="ml-10 text-xl uppercase hover:border-b-2 hover:text-[#5651e5]">
+                                <li className="ml-10 text-xl uppercase hover:border-b-2 border-b-gray-300 hover:text-[#5651e5]">
                                     About
                                 </li>
                             </Link>
                             <Link href="/#skills">
-                                <li className="ml-10 text-xl uppercase hover:border-b-2 hover:text-[#5651e5]">
+                                <li className="ml-10 text-xl uppercase hover:border-b-2 border-b-gray-300 hover:text-[#5651e5]">
                                     Skills
                                 </li>
                             </Link>
                             <Link href="/#projects">
-                                <li className="ml-10 text-xl uppercase hover:border-b-2 hover:text-[#5651e5]">
+                                <li className="ml-10 text-xl uppercase hover:border-b-2 border-b-gray-300 hover:text-[#5651e5]">
                                     Projects
                                 </li>
                             </Link>
                             <Link href="/#contact">
-                                <li className="ml-10 text-xl uppercase hover:border-b-2 hover:text-[#5651e5]">
+                                <li className="ml-10 text-xl uppercase hover:border-b-2 border-b-gray-300 hover:text-[#5651e5]">
                                     Contact
                                 </li>
                             </Link>
@@ -112,7 +114,7 @@ const Navbar = () => {
                                         onClick={() => {
                                             setNav(false);
                                         }}
-                                        className="py-4 text-xl">
+                                        className="py-4 text-xl hover:text-[#5651e5]">
                                         Home
                                     </li>
                                 </Link>
@@ -121,7 +123,7 @@ const Navbar = () => {
                                         onClick={() => {
                                             setNav(false);
                                         }}
-                                        className="py-4 text-xl">
+                                        className="py-4 text-xl hover:text-[#5651e5]">
                                         About
                                     </li>
                                 </Link>
@@ -130,7 +132,7 @@ const Navbar = () => {
                                         onClick={() => {
                                             setNav(false);
                                         }}
-                                        className="py-4 text-xl">
+                                        className="py-4 text-xl hover:text-[#5651e5]">
                                         Skills
                                     </li>
                                 </Link>
@@ -139,7 +141,7 @@ const Navbar = () => {
                                         onClick={() => {
                                             setNav(false);
                                         }}
-                                        className="py-4 text-xl">
+                                        className="py-4 text-xl hover:text-[#5651e5]">
                                         Projects
                                     </li>
                                 </Link>
@@ -148,12 +150,12 @@ const Navbar = () => {
                                         onClick={() => {
                                             setNav(false);
                                         }}
-                                        className="py-4 text-xl">
+                                        className="py-4 text-xl hover:text-[#5651e5]">
                                         Contact
                                     </li>
                                 </Link>
                             </ul>
-                            <div className="pt-40">
+                            <div className="pt-20">
                                 <p className="uppercase tracking-widest">Let&apos;s Connect</p>
                                 <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                                     <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
