@@ -13,22 +13,22 @@ const Projects = () => {
                     <ProjectItem
                         title="Project 1"
                         backgroundImg={projectImgOne}
-                        projectUrl="/property"
+                        projectUrl="/projectOne"
                     />
                     <ProjectItem
                         title="Project 2"
                         backgroundImg={projectImgTwo}
-                        projectUrl="/property"
+                        projectUrl="/projectTwo"
                     />
                     <ProjectItem
                         title="Project 3"
                         backgroundImg={projectImgTwo}
-                        projectUrl="/property"
+                        projectUrl="/projectThree"
                     />
                     <ProjectItem
                         title="Project 4"
                         backgroundImg={projectImgOne}
-                        projectUrl="/property"
+                        projectUrl="/projectFour"
                     />
                 </div>
             </div>
