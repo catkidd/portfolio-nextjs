@@ -24,27 +24,50 @@ const projectOne = () => {
 
             <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">
                 <div className="col-span-4">
-                    <p>Project</p>
-                    <h2>Overview</h2>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis recusandae
-                        dolore dignissimos dicta, eius velit sed doloribus exercitationem
-                        perspiciatis expedita itaque porro explicabo at iste iusto sit! Natus
-                        excepturi nostrum ducimus quae voluptatum nobis aliquam asperiores eligendi
-                        quo doloribus in quaerat id molestiae voluptatibus similique soluta repellat
-                        eum, voluptatem officiis neque delectus velit veritatis labore quos.
-                        Deserunt labore laboriosam facilis deleniti reprehenderit aut
-                        necessitatibus! Maxime architecto accusamus unde nam quam illum assumenda
-                        doloribus et rem, molestias ex at mollitia vel optio quisquam! Autem rerum
-                        facilis ipsam magnam eius, provident necessitatibus consequuntur velit hic,
-                        quibusdam, voluptates id asperiores ea aut possimus.
-                    </p>
+                    <div className="text-justify">
+                        <div className="text-xl tracking-widest font-semibold uppercase text-[#5651e5]">
+                            <p>Project</p>
+                            <hr className="w-8 h-1 mx-4 mt-4 bg-[#709dff] border-0 rounded"></hr>
+                        </div>
+
+                        <h2 className=" py-4">Overview</h2>
+                        <p className="py-2 text-gray-600">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis
+                            recusandae dolore dignissimos dicta, eius velit sed doloribus
+                            exercitationem perspiciatis expedita itaque porro explicabo at iste
+                            iusto sit! Natus excepturi nostrum ducimus quae voluptatum nobis aliquam
+                            asperiores eligendi quo doloribus in quaerat id molestiae voluptatibus
+                            similique soluta repellat eum, voluptatem officiis neque delectus velit
+                            veritatis labore quos. Deserunt labore laboriosam facilis deleniti
+                            reprehenderit aut necessitatibus! Maxime architecto accusamus unde nam
+                            quam illum assumenda doloribus et rem, molestias ex at mollitia vel
+                            optio quisquam! Autem rerum facilis ipsam magnam eius, provident
+                            necessitatibus consequuntur velit hic, quibusdam, voluptates id
+                            asperiores ea aut possimus.
+                        </p>
+                        <p className="py-2 text-gray-600">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem saepe
+                            explicabo, sequi voluptatum odio, eligendi repellat reprehenderit
+                            molestias totam repudiandae velit libero eveniet, officiis blanditiis
+                            beatae consequuntur dolor ut vitae quo ducimus rem temporibus sunt
+                            quisquam? Voluptatem doloremque neque dignissimos officia cumque aliquam
+                            corporis ab, sint quisquam necessitatibus voluptatum laboriosam?
+                        </p>
+                        <p className="py-2 text-gray-600">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum enim
+                            esse aliquid assumenda numquam perspiciatis cum veritatis cumque, id
+                            autem?
+                        </p>
+                    </div>
                     <a href="/" target="_blank" rel="noreferrer">
                         <button className="px-8 py-2 mt-4 mr-8">Code</button>
                     </a>
                     <a href="/" target="_blank" rel="noreferrer">
                         <button className="px-8 py-2 mt-4">Demo</button>
                     </a>
+                    <Link href="/#projects">
+                        <button className="px-8 py-2 ml-8">Back</button>
+                    </Link>
                 </div>
                 <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
                     <div className="p-2">
@@ -71,9 +94,6 @@ const projectOne = () => {
                         </div>
                     </div>
                 </div>
-                <Link href="/#projects">
-                    <p className="underline cursor-pointer">Back</p>
-                </Link>
             </div>
         </div>
     );
