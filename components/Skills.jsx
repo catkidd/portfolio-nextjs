@@ -16,8 +16,8 @@ const Skills = () => {
             <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-ful">
                 <p className="text-xl text-center tracking-widest font-semibold uppercase text-[#5651e5]">
                     Skills
-                    <hr className="w-8 h-1 mx-auto mt-4 bg-[#709dff] border-0 rounded"></hr>
                 </p>
+                <hr className="w-8 h-1 mx-auto mt-4 bg-[#709dff] border-0 rounded"></hr>
                 <h2 className=" py-4 text-center">What can I do</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-2">
                     <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">

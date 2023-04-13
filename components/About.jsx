@@ -9,8 +9,8 @@ const About = () => {
                 <div className="col-span-2 text-justify">
                     <p className="text-center uppercase text-xl font-semibold tracking-widest text-[#5651e5]">
                         About
-                        <hr className="w-8 h-1 mx-auto mt-4 bg-[#709dff] border-0 rounded"></hr>
                     </p>
+                    <hr className="w-8 h-1 mx-auto mt-4 bg-[#709dff] border-0 rounded"></hr>
                     <h2 className="py-4 text-center">Who I Am</h2>
                     <p className="py-2 text-gray-600">
                         Hey there, I&apos;m{" "}
@@ -63,7 +63,7 @@ const About = () => {
                         src={profileImage}
                         alt="profile image"
                         width="500"
-                        height="400"
+                        height="500"
                     />
                 </div>
             </div>

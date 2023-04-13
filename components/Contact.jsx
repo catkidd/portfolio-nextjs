@@ -11,8 +11,8 @@ const Contact = () => {
             <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
                 <p className="text-xl text-center font-semibold tracking-widest uppercase text-[#5651e5]">
                     Contact
-                    <hr className="w-8 h-1 mx-auto mt-4 bg-[#709dff] border-0 rounded"></hr>
                 </p>
+                <hr className="w-8 h-1 mx-auto mt-4 bg-[#709dff] border-0 rounded"></hr>
                 <h2 className="py-4 text-center">Get In Touch</h2>
                 <div className="grid lg:grid-cols-5 gap-8">
                     {/* left */}

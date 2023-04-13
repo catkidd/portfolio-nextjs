@@ -9,8 +9,8 @@ const Main = () => {
                     <div className="mt-16">
                         <p className="uppercase text-sm tracking-widest text-gray-600">
                             Let&apos;s build something legendary
-                            <hr className=" w-20 h-1 mx-auto mt-4 bg-[#709dff] border-0 rounded"></hr>
                         </p>
+                        <hr className=" w-20 h-1 mx-auto mt-4 bg-[#709dff] border-0 rounded"></hr>
 
                         <h1 className="py-4 text-gray-700">
                             Hey, I&apos;m <span className="text-[#5651e5]">Dipesh Parajuli</span>
