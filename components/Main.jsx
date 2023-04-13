@@ -6,7 +6,7 @@ const Main = () => {
         <>
             <div id="home" className="w-full h-screen text-center">
                 <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
-                    <div>
+                    <div className="mt-16">
                         <p className="uppercase text-sm tracking-widest text-gray-600">
                             Let&apos;s build something legendary
                             <hr className=" w-20 h-1 mx-auto mt-2 bg-[#709dff] border-0 rounded"></hr>
@@ -17,15 +17,16 @@ const Main = () => {
                         </h1>
                         <h1 className="py-2 text-gray-700">A Front-End Web Developer</h1>
                         <p className="py-4 text-gray-600 max-w-[70%] m-auto">
-                            Welcome to my <span className="text-[#5651e5]">portfolio</span> website,
+                            Welcome to my{" "}
+                            <span className="text-[#5651e5] font-semibold">portfolio</span> website,
                             where you can witness the birth of a{" "}
-                            <span className="text-[#5651e5]">developer</span> superstar! With fresh
-                            ideas and a hunger to learn, I&apos;m eager to showcase my skills and
-                            creativity to potential employers. Check out my{" "}
-                            <span className="text-[#5651e5] text-lg font-semibold">projects</span>{" "}
-                            and <span className="text-[#5651e5] text-lg font-semibold">skills</span>{" "}
+                            <span className="text-[#5651e5] font-semibold">developer</span>{" "}
+                            superstar! With fresh ideas and a hunger to learn, I&apos;m eager to
+                            showcase my skills and creativity to potential employers. Check out my{" "}
+                            <span className="text-[#5651e5] text-xl font-semibold">projects</span>{" "}
+                            and <span className="text-[#5651e5] text-xl font-semibold">skills</span>{" "}
                             section, and let&apos;s create something{" "}
-                            <span className="text-[#5651e5]">amazing</span> together!
+                            <span className="text-[#5651e5] font-semibold">amazing</span> together!
                         </p>
                         <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
                             <a
