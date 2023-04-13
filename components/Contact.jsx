@@ -34,18 +34,38 @@ const Contact = () => {
                             <div className=" pt-32">
                                 <p className="uppercase py-4 text-[#5651e5]">Connect with me</p>
                                 <div className="flex justify-between items-center py-4">
-                                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                                        <FaFacebookF size={20} />
-                                    </div>
-                                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                                        <FaInstagram size={20} />
-                                    </div>
-                                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                                        <FaLinkedinIn size={20} />
-                                    </div>
-                                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                                        <FaGithub size={20} />
-                                    </div>
+                                    <a
+                                        href="https://www.facebook.com/scorpdipesh"
+                                        target="_blank"
+                                        rel="noreferrer">
+                                        <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                                            <FaFacebookF size={20} />
+                                        </div>
+                                    </a>
+                                    <a
+                                        href="https://www.instagram.com/scorpdp/"
+                                        target="_blank"
+                                        rel="noreferrer">
+                                        <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                                            <FaInstagram size={20} />
+                                        </div>
+                                    </a>
+                                    <a
+                                        href="https://www.linkedin.com/in/dipeshparajuli/"
+                                        target="_blank"
+                                        rel="noreferrer">
+                                        <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                                            <FaLinkedinIn size={20} />
+                                        </div>
+                                    </a>
+                                    <a
+                                        href="https://github.com/catkidd"
+                                        target="_blank"
+                                        rel="noreferrer">
+                                        <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                                            <FaGithub size={20} />
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>

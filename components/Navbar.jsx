@@ -167,18 +167,38 @@ const Navbar = () => {
                             <div className="pt-20">
                                 <p className="uppercase tracking-widest">Let&apos;s Connect</p>
                                 <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-                                        <FaFacebookF />
-                                    </div>
-                                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-                                        <FaInstagram />
-                                    </div>
-                                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-                                        <FaLinkedinIn />
-                                    </div>
-                                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-                                        <FaGithub />
-                                    </div>
+                                    <a
+                                        href="https://www.facebook.com/scorpdipesh"
+                                        target="_blank"
+                                        rel="noreferrer">
+                                        <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
+                                            <FaFacebookF />
+                                        </div>
+                                    </a>
+                                    <a
+                                        href="https://www.instagram.com/scorpdp/"
+                                        target="_blank"
+                                        rel="noreferrer">
+                                        <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
+                                            <FaInstagram />
+                                        </div>
+                                    </a>
+                                    <a
+                                        href="https://www.linkedin.com/in/dipeshparajuli/"
+                                        target="_blank"
+                                        rel="noreferrer">
+                                        <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
+                                            <FaLinkedinIn />
+                                        </div>
+                                    </a>
+                                    <a
+                                        href="https://github.com/catkidd"
+                                        target="_blank"
+                                        rel="noreferrer">
+                                        <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
+                                            <FaGithub />
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>

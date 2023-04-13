@@ -21,18 +21,35 @@ const Main = () => {
                             exercitationem alias?
                         </p>
                         <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-                            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                                <FaFacebookF size={25} />
-                            </div>
-                            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                                <FaInstagram size={25} />
-                            </div>
-                            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                                <FaLinkedinIn size={25} />
-                            </div>
-                            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                                <FaGithub size={25} />
-                            </div>
+                            <a
+                                href="https://www.facebook.com/scorpdipesh"
+                                target="_blank"
+                                rel="noreferrer">
+                                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                                    <FaFacebookF size={25} />
+                                </div>
+                            </a>
+                            <a
+                                href="https://www.instagram.com/scorpdp/"
+                                target="_blank"
+                                rel="noreferrer">
+                                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                                    <FaInstagram size={25} />
+                                </div>
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/dipeshparajuli/"
+                                target="_blank"
+                                rel="noreferrer">
+                                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                                    <FaLinkedinIn size={25} />
+                                </div>
+                            </a>
+                            <a href="https://github.com/catkidd" target="_blank" rel="noreferrer">
+                                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                                    <FaGithub size={25} />
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
