@@ -117,7 +117,7 @@ const Navbar = () => {
                             </div>
                         </div>
                         <div className="py-4 flex flex-col">
-                            <ul className="uppercase">
+                            <ul className="uppercase font-semibold">
                                 <Link href="/">
                                     <li
                                         onClick={() => {
@@ -164,8 +164,10 @@ const Navbar = () => {
                                     </li>
                                 </Link>
                             </ul>
-                            <div className="pt-20">
-                                <p className="uppercase tracking-widest">Let&apos;s Connect</p>
+                            <div className=" pt-16">
+                                <p className="uppercase tracking-widest text-[#5651e5]">
+                                    Let&apos;s Connect
+                                </p>
                                 <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                                     <a
                                         href="https://www.facebook.com/scorpdipesh"
