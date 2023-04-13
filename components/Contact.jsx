@@ -80,18 +80,26 @@ const Contact = () => {
                             <form>
                                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                                     <div className="flex flex-col">
-                                        <label className="uppercase text-sm py-2">Name</label>
+                                        <label className="uppercase text-sm py-2">
+                                            Name
+                                            <span className="font-semibold text-base text-red-500">
+                                                *
+                                            </span>
+                                        </label>
                                         <input
                                             className="border-2 rounded-lg p-3 flex border-gray-300"
                                             type="text"
                                             name="username"
                                             id="username"
-                                            placeholder="Your name"
+                                            placeholder="Your full name"
                                         />
                                     </div>
                                     <div className="flex flex-col">
                                         <label className="uppercase text-sm py-2">
                                             Phone Number
+                                            <span className="font-semibold text-base text-red-500">
+                                                *
+                                            </span>
                                         </label>
                                         <input
                                             className="border-2 rounded-lg p-3 flex border-gray-300"
@@ -103,7 +111,12 @@ const Contact = () => {
                                     </div>
                                 </div>
                                 <div className="flex flex-col py-2">
-                                    <label className="uppercase text-sm py-2">Email</label>
+                                    <label className="uppercase text-sm py-2">
+                                        Email
+                                        <span className="font-semibold text-base text-red-500">
+                                            *
+                                        </span>
+                                    </label>
                                     <input
                                         className="border-2 rounded-lg p-3 flex border-gray-300"
                                         type="email"
@@ -113,7 +126,12 @@ const Contact = () => {
                                     />
                                 </div>
                                 <div className="flex flex-col py-2">
-                                    <label className="uppercase text-sm py-2">Subject</label>
+                                    <label className="uppercase text-sm py-2">
+                                        Subject
+                                        <span className="font-semibold text-base text-red-500">
+                                            *
+                                        </span>
+                                    </label>
                                     <input
                                         className="border-2 rounded-lg p-3 flex border-gray-300"
                                         type="text"
@@ -123,7 +141,12 @@ const Contact = () => {
                                     />
                                 </div>
                                 <div className="flex flex-col py-2">
-                                    <label className="uppercase text-sm py-2">Message</label>
+                                    <label className="uppercase text-sm py-2">
+                                        Message
+                                        <span className="font-semibold text-base text-red-500">
+                                            *
+                                        </span>
+                                    </label>
                                     <textarea
                                         className="border-2 rounded-lg p-3 border-gray-300"
                                         rows="10"></textarea>
