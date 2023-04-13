@@ -9,7 +9,7 @@ const Main = () => {
                     <div className="mt-16">
                         <p className="uppercase text-sm tracking-widest text-gray-600">
                             Let&apos;s build something legendary
-                            <hr className=" w-20 h-1 mx-auto mt-2 bg-[#709dff] border-0 rounded"></hr>
+                            <hr className=" w-20 h-1 mx-auto mt-4 bg-[#709dff] border-0 rounded"></hr>
                         </p>
 
                         <h1 className="py-4 text-gray-700">

@@ -9,7 +9,7 @@ const About = () => {
                 <div className="col-span-2 text-justify">
                     <p className="text-center uppercase text-xl font-semibold tracking-widest text-[#5651e5]">
                         About
-                        <hr className="w-8 h-1 mx-auto mt-2 bg-[#709dff] border-0 rounded"></hr>
+                        <hr className="w-8 h-1 mx-auto mt-4 bg-[#709dff] border-0 rounded"></hr>
                     </p>
                     <h2 className="py-4 text-center">Who I Am</h2>
                     <p className="py-2 text-gray-600">
