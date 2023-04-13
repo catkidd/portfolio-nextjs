@@ -9,7 +9,10 @@ const Contact = () => {
     return (
         <div id="contact" className="w-full lg:h-screen">
             <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-                <p className="text-xl tracking-widest uppercase text-[#5651e5]">Contact</p>
+                <p className="text-xl font-semibold tracking-widest uppercase text-[#5651e5]">
+                    Contact
+                    <hr className="w-8 h-1 mx-4 mt-2 bg-[#709dff] border-0 rounded"></hr>
+                </p>
                 <h2 className="py-4">Get In Touch</h2>
                 <div className="grid lg:grid-cols-5 gap-8">
                     {/* left */}
@@ -25,7 +28,7 @@ const Contact = () => {
                                 />
                             </div>
                             <div>
-                                <h2 className="py-4">Dipesh Parajuli</h2>
+                                <h2 className="py-4 text-[#5651e5]">Dipesh Parajuli</h2>
                                 <p className="py-4">
                                     I am available for freelance or full-time positions. Contact me
                                     and let&apos;s talk.
