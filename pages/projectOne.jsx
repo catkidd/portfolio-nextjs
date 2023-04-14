@@ -65,7 +65,10 @@ const projectOne = () => {
                     </div>
 
                     <div className="flex flex-row justify-items-start">
-                        <a href="/" target="_blank" rel="noreferrer">
+                        <a
+                            href="https://github.com/catkidd/portfolio-nextjs"
+                            target="_blank"
+                            rel="noreferrer">
                             <button className="px-8 py-2 mt-4 mr-8">Code</button>
                         </a>
                         <a href="/" target="_blank" rel="noreferrer">
