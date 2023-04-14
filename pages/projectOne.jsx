@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import projextImgOne from "../public/assets/projects/image-1.png";
+import portfolioImg from "../public/assets/projects/portfolio-web-img.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
@@ -13,12 +13,12 @@ const projectOne = () => {
                     className="absolute z-1"
                     layout="fill"
                     objectFit="cover"
-                    src={projextImgOne}
+                    src={portfolioImg}
                     alt="/"
                 />
                 <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
                     <h2 className="py-2">Portfolio Website</h2>
-                    <h3>
+                    <h3 className=" w-1/2">
                         A portfolio website made with Next.js and Tailwind is a modern and fast
                         website that showcases an individual&apos;s work and achievements.
                     </h3>
