@@ -34,6 +34,7 @@ const Contact = () => {
                                     and let&apos;s talk.
                                 </p>
                             </div>
+                            <div></div>
                             <div className=" pt-32">
                                 <p className="uppercase py-4 text-[#5651e5]">Connect with me</p>
                                 <div className="flex justify-between items-center py-4">

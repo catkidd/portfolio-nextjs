@@ -3,6 +3,7 @@ import React from "react";
 import projextImgOne from "../public/assets/projects/image-1.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
+import { HiOutlineBackspace } from "react-icons/hi";
 
 const projectOne = () => {
     return (
@@ -59,15 +60,20 @@ const projectOne = () => {
                             autem?
                         </p>
                     </div>
-                    <a href="/" target="_blank" rel="noreferrer">
-                        <button className="px-8 py-2 mt-4 mr-8">Code</button>
-                    </a>
-                    <a href="/" target="_blank" rel="noreferrer">
-                        <button className="px-8 py-2 mt-4">Demo</button>
-                    </a>
-                    <Link href="/#projects">
-                        <button className="px-8 py-2 ml-8">Back</button>
-                    </Link>
+
+                    <div className="flex flex-row justify-items-start">
+                        <a href="/" target="_blank" rel="noreferrer">
+                            <button className="px-8 py-2 mt-4 mr-8">Code</button>
+                        </a>
+                        <a href="/" target="_blank" rel="noreferrer">
+                            <button className="px-8 py-2 mt-4">Demo</button>
+                        </a>
+                        <div className="ml-8 py-2 px-6 mt-4 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white">
+                            <Link href="/#projects">
+                                <p>Back</p>
+                            </Link>
+                        </div>
+                    </div>
                 </div>
                 <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
                     <div className="p-2">
