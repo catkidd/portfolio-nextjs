@@ -3,7 +3,6 @@ import React from "react";
 import projextImgOne from "../public/assets/projects/image-1.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
-import { HiOutlineBackspace } from "react-icons/hi";
 
 const projectOne = () => {
     return (

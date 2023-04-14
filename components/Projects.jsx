@@ -1,6 +1,7 @@
 import React from "react";
 import projectImgOne from "../public/assets/projects/image-1.png";
 import portfolioImg from "../public/assets/projects/portfolio-web-img.png";
+import portfolioImg2 from "../public/assets/projects/portfolio-web-img-2.png";
 import projectImgTwo from "../public/assets/projects/image-2.png";
 import ProjectItem from "./ProjectItem";
 
@@ -33,10 +34,10 @@ const Projects = () => {
                         projectDesc="Lorem, ipsum dolor.3"
                     />
                     <ProjectItem
-                        title="Project 4"
-                        backgroundImg={projectImgOne}
+                        title="Portfolio Website 1"
+                        backgroundImg={portfolioImg2}
                         projectUrl="/projectFour"
-                        projectDesc="Lorem, ipsum dolor.4"
+                        projectDesc="Tailwind CSS, the superhero of web development!"
                     />
                 </div>
             </div>
