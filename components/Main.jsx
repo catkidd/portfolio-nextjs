@@ -28,7 +28,7 @@ const Main = () => {
                             section, and let&apos;s create something{" "}
                             <span className="text-[#5651e5] font-semibold">amazing</span> together!
                         </p>
-                        <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
+                        <div className="flex items-center justify-between max-w-[330px] m-auto py-4 text-[#5651e5]">
                             <a
                                 href="https://www.facebook.com/scorpdipesh"
                                 target="_blank"

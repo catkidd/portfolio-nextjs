@@ -18,8 +18,11 @@ const projectOne = () => {
                     alt="/"
                 />
                 <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-                    <h2 className="py-2">Project - One</h2>
-                    <h3>Lorem, ipsum dolor.</h3>
+                    <h2 className="py-2">Portfolio Website</h2>
+                    <h3>
+                        A portfolio website made with Next.js and Tailwind is a modern and fast
+                        website that showcases an individual&apos;s work and achievements.
+                    </h3>
                 </div>
             </div>
 
