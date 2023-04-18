@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import projectImgTwo from "../public/assets/projects/image-2.png";
+import forecastFront from "../public/assets/projects/weather-forecast-front.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
@@ -13,12 +13,18 @@ const projectTwo = () => {
                     className="absolute z-1"
                     layout="fill"
                     objectFit="cover"
-                    src={projectImgTwo}
+                    src={forecastFront}
                     alt="/"
                 />
                 <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-                    <h2 className="py-2">Project - Two</h2>
-                    <h3>Lorem, ipsum dolor.</h3>
+                    <h2 className="py-2">Weather Forecast App</h2>
+                    <h3 className="w-1/2">
+                        Brace yourself for a weather web app that&apos;s as cool as the weather
+                        itself! Built with React and Tailwind CSS, our app delivers real-time
+                        weather updates in a sleek and visually captivating interface that&apos;s
+                        sure to make your weather-checking experience a breeze - and a stylish one
+                        at that!
+                    </h3>
                 </div>
             </div>
 
@@ -32,31 +38,33 @@ const projectTwo = () => {
 
                         <h2 className=" py-4">Overview</h2>
                         <p className="py-2 text-gray-600">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis
-                            recusandae dolore dignissimos dicta, eius velit sed doloribus
-                            exercitationem perspiciatis expedita itaque porro explicabo at iste
-                            iusto sit! Natus excepturi nostrum ducimus quae voluptatum nobis aliquam
-                            asperiores eligendi quo doloribus in quaerat id molestiae voluptatibus
-                            similique soluta repellat eum, voluptatem officiis neque delectus velit
-                            veritatis labore quos. Deserunt labore laboriosam facilis deleniti
-                            reprehenderit aut necessitatibus! Maxime architecto accusamus unde nam
-                            quam illum assumenda doloribus et rem, molestias ex at mollitia vel
-                            optio quisquam! Autem rerum facilis ipsam magnam eius, provident
-                            necessitatibus consequuntur velit hic, quibusdam, voluptates id
-                            asperiores ea aut possimus.
+                            Get ready to check the weather in style with our cutting-edge weather
+                            web app! Powered by React and Tailwind CSS, this sleek and modern
+                            application provides you with up-to-the-minute weather updates for any
+                            location you desire.
                         </p>
                         <p className="py-2 text-gray-600">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem saepe
-                            explicabo, sequi voluptatum odio, eligendi repellat reprehenderit
-                            molestias totam repudiandae velit libero eveniet, officiis blanditiis
-                            beatae consequuntur dolor ut vitae quo ducimus rem temporibus sunt
-                            quisquam? Voluptatem doloremque neque dignissimos officia cumque aliquam
-                            corporis ab, sint quisquam necessitatibus voluptatum laboriosam?
+                            With a stunning and intuitive user interface, the app lets you easily
+                            search for your desired location and fetches real-time weather data from
+                            the powerful OpenWeatherMap API. You&apos;ll be able to access detailed
+                            information such as current temperature, humidity, wind speed, and
+                            weather description, as well as a 5-day forecast to plan ahead for your
+                            outdoor adventures.
                         </p>
                         <p className="py-2 text-gray-600">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum enim
-                            esse aliquid assumenda numquam perspiciatis cum veritatis cumque, id
-                            autem?
+                            But that&apos;s not all! Our app boasts a visually captivating design,
+                            complete with eye-catching icons and visually appealing color-coded
+                            elements that make checking the weather a visual treat. Plus, you have
+                            the flexibility to switch between different units of measurement,
+                            whether you prefer Celsius or Fahrenheit, making it truly customizable
+                            to your preferences.
+                        </p>
+                        <p className="py-2 text-gray-600">
+                            Whether you&apos;re planning a beach day, gearing up for a hike, or
+                            simply want to stay stylishly informed about the weather, our web app
+                            has got you covered. Experience the weather like never before with our
+                            feature-packed and visually stunning weather web app made with the
+                            latest web technologies - React and Tailwind CSS!
                         </p>
                     </div>
                     <div className="flex flex-row justify-items-start">

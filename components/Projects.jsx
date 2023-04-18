@@ -1,8 +1,8 @@
 import React from "react";
-import projectImgOne from "../public/assets/projects/image-1.png";
 import portfolioImg from "../public/assets/projects/portfolio-web-img.png";
 import portfolioImg2 from "../public/assets/projects/portfolio-web-img-2.png";
-import projectImgTwo from "../public/assets/projects/image-2.png";
+import projectImgwf from "../public/assets/projects/weather-forecast-front.png";
+import projectImg3 from "../public/assets/projects/image-1.png";
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
@@ -22,14 +22,14 @@ const Projects = () => {
                         projectDesc="A portfolio website made with Next.js and Tailwind."
                     />
                     <ProjectItem
-                        title="Project 2"
-                        backgroundImg={projectImgTwo}
+                        title="Weather Forcast App"
+                        backgroundImg={projectImgwf}
                         projectUrl="/projectTwo"
-                        projectDesc="Lorem, ipsum dolor.2"
+                        projectDesc="Brace yourself for a weather web app that's as cool as the weather itself!"
                     />
                     <ProjectItem
                         title="Project 3"
-                        backgroundImg={projectImgTwo}
+                        backgroundImg={projectImg3}
                         projectUrl="/projectThree"
                         projectDesc="Lorem, ipsum dolor.3"
                     />
