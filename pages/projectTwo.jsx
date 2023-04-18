@@ -71,7 +71,10 @@ const projectTwo = () => {
                         <a href="/" target="_blank" rel="noreferrer">
                             <button className="px-8 py-2 mt-4 mr-8">Code</button>
                         </a>
-                        <a href="/" target="_blank" rel="noreferrer">
+                        <a
+                            href="https://weather-app-alpha-lemon.vercel.app/"
+                            target="_blank"
+                            rel="noreferrer">
                             <button className="px-8 py-2 mt-4">Demo</button>
                         </a>
                         <div className="ml-8 py-2 px-6 mt-4 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white">
