@@ -1,11 +1,38 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useRef } from "react";
 import { FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import contactImage from "../public/assets/contact-image-two.jpeg";
+import emailjs from "@emailjs/browser";
+import { emailConfig } from "@/config/emailConfig";
+import { toastService } from "@/services/toastService";
 
 const Contact = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm(
+                emailConfig.serviceID,
+                emailConfig.templateID,
+                form.current,
+                emailConfig.publicKEY
+            )
+            .then(
+                (result) => {
+                    console.log(result.text);
+                    toastService.success("Email sent Successfully!");
+                },
+                (error) => {
+                    // console.log(error.text);
+                    toastService.error("Email sending failed!");
+                }
+            );
+    };
+
     return (
         <div id="contact" className="w-full lg:h-screen">
             <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
@@ -37,13 +64,13 @@ const Contact = () => {
                             <div></div>
                             <div className=" pt-32">
                                 <p className="uppercase py-4 text-[#5651e5]">Connect with me</p>
-                                <div className="flex justify-between items-center py-4">
+                                <div className="flex justify-between items-center py-4 text-[#5651e5]">
                                     <a
                                         href="https://www.facebook.com/scorpdipesh"
                                         target="_blank"
                                         rel="noreferrer">
                                         <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                                            <FaFacebookF size={20} />
+                                            <FaFacebookF size={22} />
                                         </div>
                                     </a>
                                     <a
@@ -51,7 +78,7 @@ const Contact = () => {
                                         target="_blank"
                                         rel="noreferrer">
                                         <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                                            <FaInstagram size={20} />
+                                            <FaInstagram size={22} />
                                         </div>
                                     </a>
                                     <a
@@ -59,7 +86,7 @@ const Contact = () => {
                                         target="_blank"
                                         rel="noreferrer">
                                         <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                                            <FaLinkedinIn size={20} />
+                                            <FaLinkedinIn size={22} />
                                         </div>
                                     </a>
                                     <a
@@ -67,7 +94,7 @@ const Contact = () => {
                                         target="_blank"
                                         rel="noreferrer">
                                         <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                                            <FaGithub size={20} />
+                                            <FaGithub size={22} />
                                         </div>
                                     </a>
                                 </div>
@@ -78,7 +105,7 @@ const Contact = () => {
                     {/* right */}
                     <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
                         <div className="p-4">
-                            <form>
+                            <form ref={form} onSubmit={sendEmail}>
                                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                                     <div className="flex flex-col">
                                         <label className="uppercase text-sm py-2">
@@ -150,6 +177,8 @@ const Contact = () => {
                                     </label>
                                     <textarea
                                         className="border-2 rounded-lg p-3 border-gray-300"
+                                        name="message"
+                                        id="message"
                                         rows="10"
                                         placeholder="Write some Message . . . "></textarea>
                                 </div>
