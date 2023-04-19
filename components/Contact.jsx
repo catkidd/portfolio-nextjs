@@ -1,38 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useRef } from "react";
+import React from "react";
 import { FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import contactImage from "../public/assets/contact-image-two.jpeg";
-import emailjs from "@emailjs/browser";
-import { emailConfig } from "@/config/emailConfig";
-import { toastService } from "@/services/toastService";
+import ContactForm from "./ContactForm";
 
 const Contact = () => {
-    const form = useRef();
-
-    const sendEmail = (e) => {
-        e.preventDefault();
-
-        emailjs
-            .sendForm(
-                emailConfig.serviceID,
-                emailConfig.templateID,
-                form.current,
-                emailConfig.publicKEY
-            )
-            .then(
-                (result) => {
-                    console.log(result.text);
-                    toastService.success("Email sent Successfully!");
-                },
-                (error) => {
-                    // console.log(error.text);
-                    toastService.error("Email sending failed!");
-                }
-            );
-    };
-
     return (
         <div id="contact" className="w-full lg:h-screen">
             <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
@@ -105,87 +79,7 @@ const Contact = () => {
                     {/* right */}
                     <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
                         <div className="p-4">
-                            <form ref={form} onSubmit={sendEmail}>
-                                <div className="grid md:grid-cols-2 gap-4 w-full py-2">
-                                    <div className="flex flex-col">
-                                        <label className="uppercase text-sm py-2">
-                                            Name
-                                            <span className="font-semibold text-base text-red-500">
-                                                *
-                                            </span>
-                                        </label>
-                                        <input
-                                            className="border-2 rounded-lg p-3 flex border-gray-300"
-                                            type="text"
-                                            name="username"
-                                            id="username"
-                                            placeholder="Your full name"
-                                        />
-                                    </div>
-                                    <div className="flex flex-col">
-                                        <label className="uppercase text-sm py-2">
-                                            Phone Number
-                                            <span className="font-semibold text-base text-red-500">
-                                                *
-                                            </span>
-                                        </label>
-                                        <input
-                                            className="border-2 rounded-lg p-3 flex border-gray-300"
-                                            type="text"
-                                            name="phonenumber"
-                                            id="phonenumber"
-                                            placeholder="Your phone number"
-                                        />
-                                    </div>
-                                </div>
-                                <div className="flex flex-col py-2">
-                                    <label className="uppercase text-sm py-2">
-                                        Email
-                                        <span className="font-semibold text-base text-red-500">
-                                            *
-                                        </span>
-                                    </label>
-                                    <input
-                                        className="border-2 rounded-lg p-3 flex border-gray-300"
-                                        type="email"
-                                        name="email"
-                                        id="email"
-                                        placeholder="Your email address"
-                                    />
-                                </div>
-                                <div className="flex flex-col py-2">
-                                    <label className="uppercase text-sm py-2">
-                                        Subject
-                                        <span className="font-semibold text-base text-red-500">
-                                            *
-                                        </span>
-                                    </label>
-                                    <input
-                                        className="border-2 rounded-lg p-3 flex border-gray-300"
-                                        type="text"
-                                        name="subject"
-                                        id="subject"
-                                        placeholder="Your subject"
-                                    />
-                                </div>
-                                <div className="flex flex-col py-2">
-                                    <label className="uppercase text-sm py-2">
-                                        Message
-                                        <span className="font-semibold text-base text-red-500">
-                                            *
-                                        </span>
-                                    </label>
-                                    <textarea
-                                        className="border-2 rounded-lg p-3 border-gray-300"
-                                        name="message"
-                                        id="message"
-                                        rows="10"
-                                        placeholder="Write some Message . . . "></textarea>
-                                </div>
-                                <button className="w-full p-4 text-gray-100 mt-4">
-                                    Send Message
-                                </button>
-                            </form>
+                            <ContactForm />
                         </div>
                     </div>
                 </div>
