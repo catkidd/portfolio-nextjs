@@ -1,8 +1,18 @@
 import Image from "next/image";
 import React from "react";
 import portfolioImg2 from "../public/assets/projects/portfolio-web-img-2.png";
-import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
+
+const technologies = [
+    { name: "HTML" },
+    { name: "CSS" },
+    { name: "JavaScript" },
+    { name: "React" },
+    { name: "Tailwind CSS" },
+    { name: "Git" },
+    { name: "Github" },
+    { name: "Vercel" },
+];
 
 const projectFour = () => {
     return (
@@ -22,11 +32,11 @@ const projectFour = () => {
                 </div>
             </div>
 
-            <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">
+            <div className="max-w-[1240px] mx-auto p-2 py-8">
                 <div className="col-span-4">
-                    <div className="text-justify">
+                    <div className="text-justify w-11/12">
                         <div className="text-xl tracking-widest font-semibold uppercase text-[#5651e5]">
-                            <p>Portfolio Website 1</p>
+                            <p>Project</p>
                             <hr className="w-8 h-1 mx-4 mt-4 bg-[#709dff] border-0 rounded"></hr>
                         </div>
 
@@ -59,49 +69,42 @@ const projectFour = () => {
                             autem?
                         </p>
                     </div>
-                    <div className="flex flex-row justify-items-start">
-                        <a
-                            href="https://github.com/catkidd/react-portfolio-using-tailwind"
-                            target="_blank"
-                            rel="noreferrer">
-                            <button className="px-8 py-2 mt-4 mr-8">Code</button>
-                        </a>
-                        <a
-                            href="https://react-portfolio-using-tailwind.vercel.app/"
-                            target="_blank"
-                            rel="noreferrer">
-                            <button className="px-8 py-2 mt-4">Demo</button>
-                        </a>
-                        <div className="ml-8 py-2 px-6 mt-4 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white">
-                            <Link href="/#projects">
-                                <p>Back</p>
-                            </Link>
-                        </div>
+                </div>
+            </div>
+            <div className="max-w-[1240px] mx-auto">
+                <div className="p-2">
+                    <h2 className=" py-4">Technologies</h2>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 w-11/12 text-center">
+                        {technologies.map((items, i) => {
+                            return (
+                                <p
+                                    className="p-6 font-semibold text-gray-700 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"
+                                    key={i}>
+                                    {items.name}
+                                </p>
+                            );
+                        })}
                     </div>
                 </div>
-                <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
-                    <div className="p-2">
-                        <p className="text-center font-bold pb-2">Technologies</p>
-                        <div className="grid grid-cols-3 md:grid-cols-1">
-                            <p className="text-gray-600 py-2 flex items-center">
-                                <RiRadioButtonFill className="pr-1" /> React
-                            </p>
-                            <p className="text-gray-600 py-2 flex items-center">
-                                <RiRadioButtonFill className="pr-1" /> Tailwind
-                            </p>
-                            <p className="text-gray-600 py-2 flex items-center">
-                                <RiRadioButtonFill className="pr-1" /> Javascript
-                            </p>
-                            <p className="text-gray-600 py-2 flex items-center">
-                                <RiRadioButtonFill className="pr-1" /> Firebase
-                            </p>
-                            <p className="text-gray-600 py-2 flex items-center">
-                                <RiRadioButtonFill className="pr-1" /> Google API
-                            </p>
-                            <p className="text-gray-600 py-2 flex items-center">
-                                <RiRadioButtonFill className="pr-1" /> Zillow API
-                            </p>
-                        </div>
+            </div>
+            <div className="max-w-[1240px] mx-auto my-16 w-11/12">
+                <div className="flex flex-row justify-items-start p-2 my-10">
+                    <a
+                        href="https://github.com/catkidd/react-portfolio-using-tailwind"
+                        target="_blank"
+                        rel="noreferrer">
+                        <button className="px-9 py-3 ml-8">Code</button>
+                    </a>
+                    <a
+                        href="https://react-portfolio-using-tailwind.vercel.app/"
+                        target="_blank"
+                        rel="noreferrer">
+                        <button className="px-9 py-3 ml-8">Demo</button>
+                    </a>
+                    <div className="px-9 py-3 ml-8 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white">
+                        <Link href="/#projects">
+                            <p>Back</p>
+                        </Link>
                     </div>
                 </div>
             </div>
