@@ -99,10 +99,7 @@ const projectOne = () => {
                         rel="noreferrer">
                         <button className="px-9 py-3 ml-8">Code</button>
                     </a>
-                    <a
-                        href="https://portfolio-nextjs-nu-red.vercel.app/"
-                        target="_blank"
-                        rel="noreferrer">
+                    <a href="https://parajulidipesh.vercel.app/" target="_blank" rel="noreferrer">
                         <button className="px-9 py-3 ml-8">Demo</button>
                     </a>
                     <div className="px-9 py-3 ml-8 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white">
