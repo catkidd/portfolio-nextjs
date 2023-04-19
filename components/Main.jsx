@@ -20,12 +20,12 @@ const Main = () => {
                             <Typewriter
                                 options={{
                                     strings: [
-                                        "Front-End Developer",
-                                        "Web Developer",
-                                        "Web Designer",
-                                        "React Developer",
-                                        "Next.js Developer",
-                                        "Full Stack Developer",
+                                        "{ Front-End Developer }",
+                                        "{ Web Developer }",
+                                        "{ Web Designer }",
+                                        "{ React Developer }",
+                                        "{ Next.js Developer }",
+                                        "{ Full Stack Developer }",
                                     ],
                                     autoStart: true,
                                     loop: true,
