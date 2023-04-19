@@ -1,4 +1,5 @@
 import React from "react";
+import Typewriter from "typewriter-effect";
 import { FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const Main = () => {
@@ -15,7 +16,24 @@ const Main = () => {
                         <h1 className="py-4 text-gray-700">
                             Hey, I&apos;m <span className="text-[#5651e5]">Dipesh Parajuli</span>
                         </h1>
-                        <h1 className="py-2 text-gray-700">A Front-End Web Developer</h1>
+                        <h1 className="py-2 text-gray-700">
+                            <Typewriter
+                                options={{
+                                    strings: [
+                                        "Front-End Developer",
+                                        "Web Developer",
+                                        "Web Designer",
+                                        "React Developer",
+                                        "Next.js Developer",
+                                        "Full Stack Developer",
+                                    ],
+                                    autoStart: true,
+                                    loop: true,
+                                    delay: 120,
+                                    pauseFor: 2000,
+                                }}
+                            />
+                        </h1>
                         <p className="py-4 text-gray-600 max-w-[70%] m-auto">
                             Welcome to my{" "}
                             <span className="text-[#5651e5] font-semibold">portfolio</span> website,
